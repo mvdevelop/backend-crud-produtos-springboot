@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Cors</title>
+    <!-- É necessário configurar o Cors para a compatibilidade de portas http -->
+</head>
+<body>
+    <div>
+        <h2>Teste Cors</h2>
+    </div>
+
+    <script>
+
+        fetch('http://localhost:8080/listar')  // Realiza a requisição
+        .then(produtos => produtos.json())     // Converte o valor recebido em JSON
+        .then(retorno => console.log(retorno)) // Exibindo os produtos
+
+    </script>
+
+</body>
+</html>
